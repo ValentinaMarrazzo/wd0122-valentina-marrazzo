@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 2</title>
+</head>
+<body>
+ <h1>Nuovi elementi</h1>
+ <hr>
+ <h2>Form</h2> 
+<form method="get" action="">
+    <input name="Input di testo" type="text" placeholder="Inserire testo"><br>
+    <input type="email" name="Input di tipo email" placeholder="Inserire email"><br>
+    <textarea name="Input di tipo testo più lungo" placeholder="Inserire testo più lungo"></textarea>
+    <input type="checkbox" required>Sono una checkbox
+    <input type="radio" name="opzione"> Sono un'opzione
+    <select name="selezione">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <input type="submit" value="Invia">
+    <input type="reset" value="Ripristina">
+
+</form>
+<hr>
+<h2>Tabelle</h2>
+<table cellpadding="5" cellspacing="5">
+    <caption>Sono un titolo della tabella</caption>
+    <thead>
+<tr>
+
+    <th colspan="2" rowspan="1">
+        Sono una riga nella testata della tabella
+    </th>
+</tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>Sono una cella nel corpo della tabella</td>
+            <td>Sono una cella nel corpo della tabella</td>
+            
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>
+
+                Sono una riga nel foot della tabella</tr>
+            </td>
+    </tfoot>
+</table>
+<hr>
+<h2>Elementi audio e video</h2>
+<code>&lt;audio&gt;<br>
+&lt;source src="nome file" type="formato file"&gt; <b>Aggiungerne tanti quanti sono i formati supportati da browser</b>
+<br>
+&lt;/audio&gt;</code> <br>
+<code>&lt;video&gt;<br>
+    &lt;source src="nome file" type="formato file"&gt; <b>Aggiungerne tanti quanti sono i formati supportati da browser</b>
+    <br>
+    &lt;/video&gt;</code>
+    <hr>
+    <h2>Iframe</h2>
+    <code>&lt;iframe src="sito"&gt;&lt;/iframe&gt;</code>
+</body>
+</html>
