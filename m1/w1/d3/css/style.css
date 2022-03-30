@@ -1,0 +1,39 @@
+/*consiglio utile: nei commenti ci si può fare una legenda dove indicare quante righe occupa lo stile per ogni sezione*/
+
+#header {
+    background-color: azure;
+}
+
+h1 {
+    font-weight: 400;
+    font-size:  40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    /*@font-face {font-family:; 
+        src: url('') format('formato')} serve per usare font personalizzati*/
+}
+
+h2 {
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#numeri { 
+    background-color: aquamarine;
+    color: brown;
+    text-align: center;
+}
+
+section div {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.articolo {
+    width: 200px;
+}
+
+.articolo img { 
+    max-width: 100%;
+}
+
+/*vedere slides*/

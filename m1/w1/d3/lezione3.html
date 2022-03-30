@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lezione 3</title>
+</head>
+<body>
+    <h1>Nuovi elementi</h1>
+    <ol>
+    <li>
+        <p> L'elemento <br>
+            <code>&lt;picture&gt;<br>
+                &lt;source media="dimensioni dispositivo" srcset="file"&gt; <br>
+                &lt;img src="file"&gt; <br>
+                &lt;/picture&gt;</code> <br>
+                consente di specificare la visualizzazione di tre immagini diverse per dimensione dispositivo. <br>
+                Utilizzare questo elemento favorisce la buona indicizzazione del sito web.
+            </p>
+        </li>
+        <li>
+            <p>
+                <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> sono due scatole. <br>
+                <code>&lt;div&gt;</code> è un elemento blocco; <code>&lt;span&gt;</code> è un elemento in linea.
+            </p>
+        </li>
+        <li>
+            <p>
+                Esempio di form: 
+                
+            </p> 
+            <h2>Ordina la tua pizza</h2>
+            <form method="get" action="pagina-a-cui-mandare-dati.php">
+                <select name="gusto" required>
+                    <option>--scegli la tua pizza--</option>
+                    <option value="margherita">Margherita</option>
+                    <option value="diavola">Diavola</option>
+                    <option value="capricciosa">Capricciosa</option>
+                </select>
+                <h3>Scegli il tipo</h3>
+                <label for="ts">Sottile:</label> <input type="radio" name="tipo" id="ts" checked>
+                <label for="tn">Napoletana:</label> <input type="radio" name="tipo" id="tn">
+                <h3>Aggiunte</h3>
+                <input type="checkbox" name="bufala" id="bu"> <label for="bu">Bufala</label>
+                <input type="checkbox" name="prosciutto" id="pro"><label for="pro">Prosciutto</label> <br>
+                <h3>Dati spedizione</h3>
+                <label for="nome">Nome:</label> <input type="text" name="nome" id="nome"> <br>
+                <input type="submit" value="Ordina">
+
+            </form>
+        </li>
+        <li>La differenza tra &lt;input type="submit"&gt; e &lt;button&gt; non c'è una vera differenza. Semplicemente il primo è una tipicità dei form.</li>
+        <li>&lt;input type="button"&gt; ha un altro scopo</li>
+        </ol>
+        <hr>
+        <h2>Layout</h2>
+        <p>
+        Grossomodo, nei siti web il contenuto è disposto così:
+        <ol>
+            <li>
+                Header e nav: barra orizzontale in alto con logo e meccanismi di navigazione;
+            </li>
+            <li>
+                body:
+                <ol>
+                    <li>
+                        main: contenuto principale
+                    </li>
+                    <li>
+                        aside: contenuto secondario
+                    </li>
+                </ol>
+            </li>
+            <li>
+                footer: logo dell'azienda, informazioni legali, link secondari e di social, privacy e cookies policy.
+            </li>
+        </ol> 
+        </p> 
+        <p>
+            Non bisogna lasciare punti ciechi: da qualsiasi posizione all'interno del sito web si deve poter tornare sui propri passi.
+        </p>
+
+</body>
+</html>

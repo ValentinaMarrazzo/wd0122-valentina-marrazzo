@@ -1,0 +1,58 @@
+/*GENERALI*/
+body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+ h3, h4 {
+    font-weight: bolder;
+    color: aqua;
+}
+
+/*HEADER*/
+header {
+    background-color:aqua;
+    color: white;
+}
+ 
+#nome {
+    background-color: white;
+    color: aqua;
+    
+}
+
+/*MAIN*/
+hr {
+    border-top: dashed;
+}
+
+blockquote {
+    background-color: lightgray;
+}
+
+address li {
+    list-style-type: none;
+}
+
+li img {
+    height: 30px;
+}
+
+a {
+    color: red;
+}
+
+p span {
+    color: aqua;
+}
+
+#voto {
+    background-color: aqua;
+    color: white;
+}
+
+/*FOOTER*/
+footer { 
+    background-color: black;
+    color: whitesmoke;
+}
