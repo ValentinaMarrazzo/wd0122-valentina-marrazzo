@@ -1,0 +1,165 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    background-image: url(../img/sfondo.png);
+    background-size: contain;
+    font-family: Poppins, sans serif;
+    letter-spacing: 1px;;
+}
+
+header, main, footer {
+    margin: 10%;
+    padding: 10%;
+    box-shadow: -6px 0 16px grey;
+}
+
+/* HEADER */
+header {
+    background-image: linear-gradient(#008899, #006688);
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header li {
+    list-style-type: none;
+}
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+main {
+    background-color: whitesmoke;
+    
+}
+
+article h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+h1, h2, p {
+    margin: 3% 0 3% 0;
+}
+
+article p:first-of-type {
+    color: gray;
+    font-size: 0.85rem;
+}
+
+
+article strong {
+    color: purple;
+    font-weight: bold;
+}
+
+code {
+    background-color: lightgray;
+    border: solid 0.5px gray;
+    border-radius: 10%;
+    
+}
+
+article a {
+    color:#006688;
+    font-weight: bold;
+}
+
+iframe {
+    max-height: 30%;
+    max-width: 90%;
+    border-radius: 10%;
+}
+
+article section {
+    text-align: justify;
+    background-color: lightgray;
+    padding: 10%; 
+}
+
+article section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* TABELLE */
+table {
+    border-bottom: solid 2px blue;
+}
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+
+th, td {
+    padding: 5%;
+    text-align: center;
+}
+
+th {
+    background-color:blue;
+    color: white;
+}
+
+tr:nth-of-type(2) {
+    background-color: lightgray;
+    
+}
+tr:nth-of-type(4) {
+    background-color: lightgray;
+}
+/* FORM */
+#user_email {
+    border: none;
+    border-bottom: dashed 1px gray;
+}
+
+fieldset button {
+    display: inline;
+    margin: 3%;
+    padding: 3%;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-variant: small-caps;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+aside div { 
+    margin: 10%;
+    padding: 10%;
+    background-color: lightgray;
+    border: solid 1px gray;
+}
+
+aside div a {
+    color:#006688;
+    font-weight: bold;
+}
+
+div p:nth-of-type(2) {
+    text-align: right;
+    font-size: small;
+
+}
+
+/* FOOTER */
+footer {
+    background-image:linear-gradient(#006688, #224444);
+    color: white;
+}
+
+footer a {
+    color:deeppink; 
+}

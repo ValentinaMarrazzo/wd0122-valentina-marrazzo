@@ -1,0 +1,50 @@
+/*Sempre usare il reset/normalize per annullare le regole inserite da browser. Rende il sito web più professionale*/
+
+/*GENERALI*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*HEADER*/
+#header {
+    background-color: blue;
+    height: 100px;   
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-top: -4px;
+    padding: 5px 0;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+#header a:hover{
+    color: blue;
+
+}
+
+#header img {
+    box-shadow: 4px 0 10px lightblue;
+    height: 50px;
+}
+
+#header li:hover {
+    background-color: whitesmoke;
+
+}
+
+/*MAIN*/
+#prima-section {
+    padding: 50px 0;
+    background-image: url(https://picsum.photos/id/237/200/300);
+    color: yellowgreen;
+    background-position: center;
+    background-repeat: no-repeat;
+}
