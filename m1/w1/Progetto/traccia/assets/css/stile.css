@@ -1,0 +1,153 @@
+/*GENERALI*/
+body {
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+}
+
+header, main, footer {
+    text-align: center;
+}
+/*HEADER*/
+header {
+    background-color: black;
+    height: 10vh;
+}
+
+header img {
+    height: 50%;
+    padding: 5%;
+}
+/*MAIN*/
+
+/*ARTICLE*/
+
+h1, h3, h2 {
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#hero {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10%;
+}
+
+#hero p {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#hero a {
+    background-color: #f04c2f;
+    border-radius: 5%;
+    padding: 5% 10% 5% 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+#content div {
+    margin: 15% 5% 0 5%;
+}
+
+#content div img {
+        max-width: 70%;
+        max-height: 50vh;
+        border-radius: 100%;
+}
+
+#testimonial {
+    background-color: #e22d0e;
+    margin: 15% 0 15% 0;
+    padding: 15% 2% 15% 2%;
+    color: white;
+}
+
+#testimonial h2 {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 10%; 
+}
+
+#testimonial blockquote {
+    margin-bottom: 10%;
+    font-style: italic;
+}
+
+#testimonial cite {
+    font-style: unset;
+}
+
+#testimonial h4 {
+        font-size: 0.85rem;
+}
+
+/*ASIDE*/
+
+aside section div {
+    margin: 10%;
+    border: solid 1px #dee1e3;
+    border-radius: 0 0 2% 2%;
+}
+
+aside section div img {
+    max-width: 100%;
+}
+
+aside section div h3 {
+    font-size: 0.90rem;
+    margin: 5% 0 5% 0;
+}
+
+aside section div a {
+    text-decoration: none;
+}
+
+aside section div p {
+    font-size: 0.90rem;
+    margin: 8%;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #25a2c3;
+    color: white;
+    padding: 10%;
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.70rem;
+}
+
+footer p {
+    margin: 10% 0 10% 0;
+    font-size: 0.90rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer hr {
+    max-width: 60%;
+}
+
+footer h5 {
+    font-size: 0.75rem;
+    margin: 10%;
+}
