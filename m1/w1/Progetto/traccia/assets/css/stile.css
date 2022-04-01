@@ -12,11 +12,11 @@ header, main, footer {
 /*HEADER*/
 header {
     background-color: black;
-    height: 10vh;
+    
 }
 
 header img {
-    height: 50%;
+    height: 5vh;
     padding: 5%;
 }
 /*MAIN*/
