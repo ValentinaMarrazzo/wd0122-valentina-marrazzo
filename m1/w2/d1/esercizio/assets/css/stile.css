@@ -1,0 +1,83 @@
+/*GENERALI*/
+main {
+    margin: 5%;
+    padding: 5%;
+}
+/*HEADER*/
+header {
+    height: 15rem;
+}
+
+header div p {
+    margin: 2%;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+/*MAIN*/
+
+article {
+    line-height: 1.5;
+}
+
+article h1 {
+    font-size: 3rem;  
+    line-height: 1.80;  
+}
+
+article p, li {
+    font-size: 1.2rem;
+}
+
+.center {
+    margin-top: 5%;
+    margin-left: 33%;
+    margin-bottom: 5%;
+}
+
+caption {
+    font-size: 1.5rem;
+}
+
+th, td {
+    padding: 3%;
+    width: 30%;
+    height: 2rem;
+}
+
+iframe {
+    width: calc(100% / 2);
+    height: 30rem;
+}
+
+section {
+    width: calc(100% / 3);
+    margin-left: 25%;
+    text-align: center;
+}
+
+section button {
+    display: block;
+    margin-left: 50%;
+}
+
+aside h2 {
+    font-size: 2rem;
+}
+
+aside div {
+    padding: 3%;
+    width: 20rem;
+    height: auto;
+    margin-left: 35%;
+}
+
+/*FOOTER*/
+footer {
+    padding: 5%;
+    height: 7rem;
+    text-align: center;
+}
