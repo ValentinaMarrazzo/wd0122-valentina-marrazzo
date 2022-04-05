@@ -1,0 +1,94 @@
+header, footer {
+    height: 50px;
+    background-color: gray;
+}
+
+main {
+    margin: 50px 0;
+}
+
+div {
+    width: 100px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+}
+
+.float-section div {
+   /*float è una soluzione antiquata che non si usa più. Ora si usa inline-block*/
+   /*float = fluttuare. Questo significa che l'elemento in float non si comporta come gli altri e i meccanismi di ereditarietà non potrebbero funzionare bene*/
+   float: left;
+}
+
+.clearfix {
+    /*per gestire queste situazioni si può usare un hr apposito*/
+    /*per evitare gli a capo di testo con float si usa clear*/
+    clear: left;
+    visibility: hidden;
+
+}
+
+.inline-section {
+    text-align: right;
+}
+
+.inline-section div {
+    /*inline-block è un approccio più moderno per fare la stessa cosa, ma non il migliore esistente*/
+    display: inline-block;
+}
+
+/*la proprietà position cambia il rapporto di un elemento con il proprio contenuto*/
+/*anche se non specificato, il comportamento naturale degli elementi è position: static;*/
+
+.absolute-div {
+    background-color: brown;
+    width: 150px;
+    height: 50px;
+    /*absolute cambia l'importanza dell'elemento rispetto agli altri. Con più elementi in absolute vince l'ultimo indicato */
+    position: absolute;
+    /*le proprietà top, bottom, left e right cambiano il punto di origine dell'elemento e lo spostano*/
+    top: 100px;
+    left: 100px;
+    
+    /*z-index è la regola che indica la posizione dell'elemento in profondità, sull'asse z. Si usa con gli elementi in absolute. Nel confronto tra elementi con z-index vince l'elemento in relative*/
+    z-index: 2;
+}
+
+.absolute {
+    background-color: azure;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+.relative {
+    /*la proprietà position: relative; consente, relativamente ad un elemento genitore, di gestire gli elementi figli in absolute perché essi avranno la loro origine dall'interno dell'elemento genitore anziché dalla pagina in generale. La sua posizione è relativa alla sua posizione nel testo*/
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+}
+
+
+#edit {
+    width: 50px;
+    height: 50px;
+    background-color:darkorange;
+    color: white;
+    border-radius: 100%;
+    /*position: fixed; dà una posizione fissa rispetto al bordo della finestra, in sovraimpressione agli altri elementi*/
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.sticky {
+    /*position: sticky; coniuga le proprietà di static e di fixed. L'elemento sticky rimane ancorato all'elemento parent, ma una volta iniziato lo scorrimento seguirà il pov dello scorrimento*/
+    position: sticky;
+    /*specificare top quando si usa sticky*/
+    top: 0;
+    border-radius: 100% 0;
+    background-color: black;
+}

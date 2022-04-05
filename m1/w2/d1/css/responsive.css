@@ -1,3 +1,12 @@
+/*breakpoint degli schermi:
+
+cellulare in verticale: 320px
+cellulare in orizzontale: 480px
+tablet in verticale: 768px
+laptop: 1024px
+schermo grande: 1200px */ 
+
+
 @media (max-width:1200px) {
     .blog {
         width: 1024px;
