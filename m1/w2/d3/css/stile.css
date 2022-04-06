@@ -1,0 +1,121 @@
+h3 {
+    font-size: 2rem;
+}
+
+/*flex si utilizza sul genitore degli elementi che dovranno formare il layout a griglia. Gli elementi figli si ridurranno della dimensione del contenuto. La direzione degli elementi è di default row, da sinistra a destra.*/
+.container {
+    display: flex;
+    background-color: aqua;
+}
+
+.blocco {
+    background-color: yellow;
+    border: 2px solid brown;
+    font-size: 4rem;
+    height: 200px;
+    width: 200px;
+}
+
+#n2 {
+    /*ordine flex da destra a sinistra*/
+    flex-direction: row-reverse;
+}
+
+#n3 {
+    /*direzione in colonna. Gli elementi disposti nel genitore con flex-column allungano la colonna. Se esiste una lunghezza fissa del contenitore genitore, quelli figli si schiacceranno.*/
+    flex-direction: column;
+    height: 500px;
+}
+
+/*La regola flex-wrap: wrap; manda a capo gli elementi che vanno oltre la dimensione del contenitore genitore. La ripartizione degli spazi è automatica quando il contenitore genitore ha una dimensione.*/
+#n4 {
+    flex-direction: column;
+    height: 500px;
+    flex-wrap: wrap;
+} 
+
+#n5 {
+    flex-direction: row;
+    flex-wrap: wrap;
+}  
+
+/*quando la regola inizia con justify fa un allineamento orizzontale; quando inizia con align fa un allineamento in verticale. */
+
+/*justify riguarda il come gli elementi si ripartiscono lo spazio orizzontale su di una riga*/
+#n6 {
+    justify-content: flex-end;
+}
+
+#n7 {
+    /*space-between aggiunge uno spazio tra gli elementi*/
+    justify-content: space-between;
+}
+
+#n8 {
+    /*space-evenly distranzia gli elementi tra loro e li centra. La ripartizione è equa*/
+    justify-content: space-evenly;
+}
+
+/*align-items posiziona verticalmente gli elementi all'interno di una riga*/
+#n9 .blocco:nth-of-type(1) {
+    height: 100px;
+}
+
+#n9 {
+    /*lo start di align sposta la base su cui si dispongono gli elementi parte da sopra*/
+    align-items: flex-start;
+}
+
+#n10 .blocco {
+    height: 100px;
+}
+
+#n10 {
+    /*quando gli elementi non raggiungono la massima altezza dell'elemento, con stretch vengono allungati finché non la raggiungono*/ 
+    align-items: stretch;
+}
+
+/*align-content: gestisce la posizione in verticale di più righe*/ 
+
+/*order, di base impostato a 0, sposta gli elementi in maniera specifica per farlo apparire prima o dopo la sua posizione reale. Usa numeri negativi e numeri positivi. Riguarda l'ordine non la posizione.*/
+
+
+/*in flex-grow si richiede agli elementi di occupare tutto lo spazio possibile in orizzontale. Con il valore 1 o 2 ad un elemento solo si indica quanto spazio in più degli altri esso deve prendere*/
+
+#n11 .blocco {
+    flex-grow: 1;
+}
+
+#n11 .blocco:nth-of-type(2) {
+    flex-grow: 2;
+}
+
+/*flex-shrink definisce quanto restringere un elemento*/
+#n12 .blocco:nth-of-type(2){ 
+    flex-shrink: 20; 
+}
+
+/*flex-basis imposta una dimensione di base a tutti gli elementi*/
+#n13 .blocco {
+    flex-basis: 33%;
+}
+
+/*Nel layout a griglie lo spazio è diviso in 3 linee orizzontali e 3 verticali, dove la seconda indica il gap tra il blocco 1 (che va dalla linea 1 a 2) e il blocco 2 (che va dalla linea 2 a 3). Grid è statico, flex dinamico.*/
+
+.grid {
+    background-color: aqua;
+    display: grid;
+    /*grid-template-columns definisce una dimensione per ogni colonna*/
+    /*fr nelle colonne indica '1 parte'*/
+    grid-template-columns: 1fr 2fr 1fr;
+    /*altezza righe*/grid-template-rows: 300px 200px;
+}
+
+
+#n15 {
+    grid-template-columns: repeat(4, 1fr);
+    /*margine tra un blocco e l'altro*/gap: 5px;
+    justify-content: space-evenly;
+}
+
+/*grid-area dà un nome ad ogni elemento selezionato. Da usare con grid-template-areas che richiama le aree elencate, in ordine di comparsa; da usare con grid-template-rows che specifica l'altezza per le righe*/
