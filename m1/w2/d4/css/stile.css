@@ -1,0 +1,62 @@
+#n1 {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    /*transition: istruzione + secondi*/
+    transition: width 2.5s, height 2.5s;
+}
+
+#n1:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.container-3d{
+    position: relative;
+   /*aumentando il numero la profondità prospettica diminuisce. Più è basso il numero più il campo prospettico è profondo. E' una regola che va data al genitore*/ perspective: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+#n3{
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    /*si muove sull'asse z. Valori positivi lo portano dal centro verso l'esterno; valori negativi dall'esterno al centro. Lo z index ha effetto solo su elementi con una specifica position*/transform: translateZ(-10px);
+    animation-name: rotea3d;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/*mentre transform influisce anche sugli elementi circostanti, scale invece no*/
+
+/*animazioni*/
+
+.contenitore {
+    position: relative;
+}
+
+#n2 {
+    width: 200px;
+    height: 100px;
+    background-color: blueviolet;
+    color: white;
+    /*posso scegliere il nome*/animation-name: allarga;
+    animation-duration: 2.5s;
+   /*numero di volte in cui si ripete l'animazione*/ animation-iteration-count: 3;
+}
+
+@keyframes allarga {
+    /*per gestire un'animazione più graduale si possono indicare le percentuali di completamento anziché from e to*/
+    from {width: 200px; height: 100px;}
+    to {width: 100%; height: 300px;}
+}
+
+@keyframes rotea3d {
+    0%{transform: rotateZ(0deg) rotateY(0deg)}
+    50%{transform: rotateZ(180deg) rotateY(50deg)}
+    100%{transform: rotateZ(360deg) rotateY(360deg)}
+}

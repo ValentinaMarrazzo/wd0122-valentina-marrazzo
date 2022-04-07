@@ -1,0 +1,47 @@
+body {
+    background-color: lightgrey;
+}
+
+.board {
+    margin: 10% 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 10%;
+}
+
+.postit {
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    box-shadow: 10px 10px 5px darkgrey;
+    transition: transform 2s;
+}
+
+
+#yellow {
+    background-image: linear-gradient(lightyellow, lightgrey);
+    transform: rotate(-5deg);
+}
+
+#green {
+    background-image: linear-gradient(lightgreen, lightgrey);
+    transform: rotate(5deg);
+}
+
+#purple {
+    background-image: linear-gradient(blueviolet, lightgrey);
+    transform: rotate(-5deg);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10%;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
