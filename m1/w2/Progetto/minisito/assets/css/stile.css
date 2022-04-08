@@ -1,0 +1,449 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, #6cc1e2, #392f7a);
+    width: max-content;
+    padding: 5% 5%;
+    font-size: 1rem;
+
+}
+
+span {
+    color: #e42424;
+    font-size: 3rem;
+}
+
+/* HEADER */
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 5px 5px #d3d3d3;
+    padding: 3%;
+    
+}
+
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav .button {
+    padding: 5% 10%;
+}
+
+
+/* MAIN */
+
+#hero {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10% 5%;
+    color: white;
+    text-align: left;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 2px black;
+    line-height: 1;
+}
+
+#hero p {
+    font-size: 1rem;
+    text-shadow: 2px 2px 2px black;
+    margin: 3% 0;
+}
+
+.button-special {
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-size: 1.9rem;
+}
+
+@keyframes pulse {
+    from {box-shadow: none;}
+    to {box-shadow: 3px 3px 3px 3px #d3d3d3}
+}
+
+main section {
+    padding: 10% 5%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+section p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 10% 0;
+}
+
+#cta {
+    background-color: #0c0633;
+    color: white;
+}
+
+#cta p {
+    font-size: 1rem;
+}
+
+section img {
+    margin: auto;
+    width: 80%;
+    display: block;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(238, 238, 238);
+    padding: 3%;
+}
+
+footer section {
+    margin: auto;
+}
+
+#email {
+    display: block;
+    height: 2rem;
+    width: 100%;
+}
+
+#form {
+    width: 50vw;
+}
+
+#submit {
+    border: none;
+    color: white;
+    background-image: linear-gradient(to right, #6cc1e2, #392f7a);
+    width: max-content;
+    padding: 5% 5%;
+    font-size: 1rem;
+    width: 100%;
+}
+
+footer h5 {
+    margin-top: 5%;
+    font-size: 0.85rem;
+}
+
+/*CHI SIAMO - MAIN*/
+article section {
+    margin: 0;
+    padding: 0;
+    
+}
+
+article section:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+article section h1, #contactme {
+    margin-top: 5%;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+article section p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 3%;
+}
+
+article table {
+    margin: 10% 5%;
+}
+
+th, td {
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 3%;
+}
+
+th {
+    background-color: #6387A6;
+    color: white;
+    border-left: 1.5px solid grey;
+}
+
+tr:nth-of-type(1) {
+    background-color: #d2dce7;
+}
+
+tr:nth-of-type(3) {
+    background-color: #d2dce7;
+}
+
+article section:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+#mobiletable {
+    display: none;
+}
+
+/*CONTATTI - MAIN*/
+#info {
+    margin: 0 10%;
+    text-align: center;
+}
+
+#fifth-container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    text-align: left;
+}
+
+form input, textarea {
+    display: block;
+    margin-top: 1%;
+    width: calc(100% / 2);
+}
+
+input {
+    height: 2.5rem;;
+}
+
+#submit2 {
+    width: max-content;
+    padding: 1% 3%;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to right, #6cc1e2, #392f7a);
+    font-size: 1rem;
+}
+
+#sixth-container {
+    text-align: center;
+}
+
+#sixth-container h2 {
+    font-size: 2rem;
+}
+
+#sixth-container p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 3%;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+    
+    /*HEADER*/
+    
+    nav img {
+        height: 70%;
+    }
+
+    nav div {
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        color: #e42424;
+    }
+    
+    #menu:hover + ul {
+        display: block;
+        transition: display, 2s;
+    }
+    
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav li {
+        padding: 2%;
+        list-style-type: none;
+    }
+
+    /*FOOTER*/
+    footer label {
+        display: block;
+    }
+
+    /*CHI SIAMO*/
+    article section:nth-of-type(2) {
+        display: block;
+    }
+
+    article section img {
+        display: block;
+    }
+
+    table {
+        display: none;
+    }
+
+    #mobiletable {
+        display: block;
+    }
+
+    .colored {
+        background-color: #d2dce7;
+    }
+
+    /*CONTATTI*/
+    #fifth-container {
+        display: block;
+        text-align: center;
+    }
+    form { 
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    
+    form input, textarea {
+        width: 70vw;
+    }
+
+    #sixth-container p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 481px) {
+
+    /*HEADER*/
+    
+    nav div {
+        display: none;
+    }
+    
+    nav {
+       margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav img {
+        height: 60%;
+    }
+    
+    nav ul {
+       width: 100%;
+       font-size: 1rem;
+        text-align: right;
+    }
+    
+    nav li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 2%;
+    }
+
+    /*MAIN*/
+    #first-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3em;
+    }
+    
+    #second-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #third-container {
+        text-align: left;
+    }
+
+    #third-container div {
+        margin-top: 10%;
+    }
+
+    #third-container div span {
+        font-size: 2rem;
+       
+    }
+
+    #third-container div h2 {
+        display: inline;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #third-container div p {
+        margin: 0 5%;
+        text-align: left;
+
+
+    }
+
+    /*FOOTER*/
+
+    footer {
+        text-align: center;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 0.85rem;
+    }
+
+    #fourth-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5%;
+        text-align: left;
+    }
+
+    #form {
+        width: 10vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        height: 2vh;
+    }
+   
+    header .button {
+        padding: 10%;
+    }
+
+    .button {
+        padding: 2% 5%;
+    }
+}

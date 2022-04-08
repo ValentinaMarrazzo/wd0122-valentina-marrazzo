@@ -13,11 +13,10 @@
     width: fit-content;
     line-height: 1.35;
     font-size: 1.6rem;
-    position: relative;
 }
 
 .parole {
-    position: absolute;
+    position: relative;
     width: 5rem;
     padding: 0 5%;
 
