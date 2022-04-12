@@ -6,12 +6,13 @@ In javascript si lavora con 5 tipi di dato:
 - oggetto (liste di dati e funzioni separate per nome. Coppia nome-valore)
 - array (lista di valori identificati per numero).
 
-I dati sono assegnati a dei contenitori, cioè le variabili (var = dato;).
+I dati sono assegnati a delle partizioni di memoria (dei contenitori), cioè le variabili (var = dato;).
+Ad una variabile può essere assegnato il valore di un'altra variabile 
 
 */
 
 var num = 5;
-var string = 'testo';
+var string = 'sequenza caratteri';
 var boolean = true;
 var obj = {
     nome: 'Nome',

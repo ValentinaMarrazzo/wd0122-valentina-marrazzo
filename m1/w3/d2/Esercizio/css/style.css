@@ -1,0 +1,14 @@
+body {
+    background-color: yellowgreen;
+    color: white;
+    font-size: 2rem;
+}
+
+section {
+    margin: 10% 20%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}

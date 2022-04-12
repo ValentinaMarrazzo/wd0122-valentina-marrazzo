@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio</title>
+</head>
+<body>
+    <style>
+        .blocco {
+            display: inline-block;
+            background-color: yellowgreen;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+
+        }
+
+        .blocco2 {
+            display: inline-block;
+            background-color: rgb(205, 50, 192);
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+    </style>
+
+    <div class="blocco" onclick="sfondoRosso(0)"></div>
+    <div class="blocco" onclick="sfondoRosso(1)"></div>
+    <div class="blocco" onclick="sfondoRosso(2)"></div>
+    <div class="blocco" onclick="sfondoRosso(3)"></div>
+    <div class="blocco" onclick="sfondoRosso(4)"></div>
+    <div class="blocco" onclick="sfondoRosso(5)"></div>
+
+    <div class="blocco2" onclick="sfondoBlu(this)"></div>
+    <div class="blocco2" onclick="sfondoBlu(this)"></div>
+    <div class="blocco2" onclick="sfondoBlu(this)"></div>
+    <div class="blocco2" onclick="sfondoBlu(this)"></div>
+    <div class="blocco2" onclick="sfondoBlu(this)"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
