@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Esercizio sull'età</title>
+</head>
+<body>
+
+    <main>
+        <section>
+            <h1>
+                In che fase della vita sei?
+            </h1>
+            <h2>In base alla tua età ti dico in che fase della vita sei secondo il modello psicologico di Erik Erikson.</h2>
+        </section>
+        <hr>
+        <section>
+            <label for="age">
+                Quanti anni hai?
+            </label>
+            <input type="text" name="age" id="age">
+
+            <button onclick="giveMeAnswer(this)">Invia</button>
+        </section>
+        <hr>
+        <section id="answer">
+            <h2>
+                Ecco la tua risposta:
+            </h2>
+            <h3 id="result"></h3>
+            <p id="explain"></p>
+        </section>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-color: deeppink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkslategray;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+main { 
+    margin: 0;
+}
+
+section {
+    margin: 5% 10%;
+    padding: 15%;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    text-align: center;
+}
+
+hr {
+    display: none;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+section h2 {
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 2rem;
+    display: block;
+}
+
+input {
+    margin: 3%;
+    font-size: 2rem;
+    width: 10vw;
+    height: 2.5rem;   
+    border-color: deeppink; 
+}
+
+button {
+    height: 2.3rem;
+    width: max-content;
+    padding: 2%;
+    background-color: deeppink;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+#answer h2{
+    font-size: 2rem;
+}
+
+/*#result {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2%;
+}*/
+
+#answer p {
+    background-color: white;
+    width: 80%;
+    padding: 2%;
+}
