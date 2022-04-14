@@ -1,0 +1,31 @@
+body, main {
+    margin: 0;
+}
+
+body {
+    background-color: aqua;
+    text-align: center;
+    color:white;
+    text-shadow: 1.5px 1px darkgray;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+section {
+    margin: 1% 15%;
+    background-color: white;
+    border-radius: 6%;
+    padding: 3%;
+    color: darkgray;
+    text-shadow: none;
+
+}
+
+hr {
+    display: none;
+}
