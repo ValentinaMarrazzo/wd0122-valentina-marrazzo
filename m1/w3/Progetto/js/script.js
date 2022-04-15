@@ -2,9 +2,22 @@ const DISPLAY = document.querySelector('#display');
 
 function addNum(btn) {
     let num = btn.innerHTML;
-    DISPLAY.value +=num;
+    if(btn === document.querySelector('.op')) {
+
+        if(DISPLAY.value.includes('+') || DISPLAY.value.includes('-') || DISPLAY.value.includes('*') || DISPLAY.value.includes('/')) {
+           //
+        }else{
+            DISPLAY.value +=num;
+        }
+    }else {
+        DISPLAY.value +=num;
+        
+    }
+    
+    
     
 }
+
 
 function mul(btn) {
     let op = '*';
