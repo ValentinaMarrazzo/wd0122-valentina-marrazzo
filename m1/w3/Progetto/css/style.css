@@ -1,0 +1,83 @@
+body {
+    background-color: yellowgreen;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 2px 1px gray;
+    font-size: 3rem;
+}
+
+.container {
+    margin: 5% 30%;
+    background-image: url('../img/daisy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5%;
+    border-radius: 10%;
+    width: 30vw;
+
+}
+
+ .pad {
+     margin: 5% 30%;
+     
+    background-image: url('../img/daisy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5%;
+    border-radius: 10%;
+    margin-left: -8%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10%;
+    background-image: none;
+}
+
+#numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 6%;
+    margin-left: -10%;
+    margin-right: 20%;
+}
+
+
+input {
+    
+    height: 5rem;
+    width: 80%;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 1.6rem;
+}
+
+
+button {
+    display: block;
+    width: 8vw;
+    padding: 6%;
+    margin: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.61);
+    border: none;
+    border-radius: 10%;
+}
+
+#actions button {
+    margin-top: 80%;
+}
+
+button:active {
+   background-color: white;
+}
+

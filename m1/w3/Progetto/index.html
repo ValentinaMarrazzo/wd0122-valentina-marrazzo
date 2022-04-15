@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calcolatrice</title>
+</head>
+<body>
+
+    <main>
+
+        <h1>
+            La mia calcolatrice
+        </h1>
+        
+        <div class="container">
+            <input type="text" name="display" id="display">
+            <div class="container pad">
+                <div id="numbers">
+
+                    <button onclick="addNum(this)">1</button>
+                    <button onclick="addNum(this)">2</button>
+                    <button onclick="addNum(this)">3</button>
+                    <button onclick="addNum(this)">4</button>
+                    <button onclick="addNum(this)">5</button>
+                    <button onclick="addNum(this)">6</button>
+                    <button onclick="addNum(this)">7</button>
+                    <button onclick="addNum(this)">8</button>
+                    <button onclick="addNum(this)">9</button>
+                    <button onclick="addNum(this)">0</button>
+                    <button onclick="result(this)">=</button>
+                    <button onclick="cancThis(this)">C</button>
+                </div>
+                    <div id="actions">
+
+                        <button class="op" onclick="addNum(this)">+</button>
+                        <button class="op" onclick="addNum(this)">-</button>
+                        <button class="op" onclick="mul(this)">X</button>
+                        <button class="op" onclick="div(this)">:</button>
+                        <button onclick="sqrtCalc(this)">√</button>
+                    </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
