@@ -17,67 +17,57 @@ h1 {
 }
 
 .container {
-    margin: 5% 30%;
     background-image: url('../img/daisy.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 15vw;
+    margin: 0 37%;
     padding: 5%;
     border-radius: 10%;
-    width: 30vw;
-
 }
-
- .pad {
-     margin: 5% 30%;
-     
-    background-image: url('../img/daisy.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 5%;
-    border-radius: 10%;
-    margin-left: -8%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 10%;
-    background-image: none;
-}
-
-#numbers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 6%;
-    margin-left: -10%;
-    margin-right: 20%;
-}
-
 
 input {
-    
-    height: 5rem;
+    height: 3rem;
     width: 80%;
     border: none;
     background-color: whitesmoke;
     font-size: 1.6rem;
 }
 
+.container .pad {
+    width: 50%;
+    transform: translateX(-6vw);
+    display: flex;
+    flex-direction: row;
+    background-image: none;
+}
 
-button {
-    display: block;
-    width: 8vw;
+#numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1vw;
+}
+
+#numbers button, #actions button {
+    width: 3vw;
     padding: 6%;
-    margin: 10%;
+    margin: 3%;
     text-align: center;
     font-size: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.61);
+    background-color: rgba(255, 255, 255, 0.493);
     border: none;
     border-radius: 10%;
+    
+}
+
+#actions {
+    margin: 10%;
 }
 
 #actions button {
-    margin-top: 80%;
+    display: block;
+    margin-bottom: 20%;
 }
 
 button:active {
-   background-color: white;
-}
-
+    background-color: white;
