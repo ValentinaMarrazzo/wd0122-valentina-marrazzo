@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--COLLEGAMENTI FOGLI DI STILE-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--TAG GOOGLE FONTS E LINEICONS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/21b67fa2b7.js" crossorigin="anonymous"></script>
+
+
+    <title>Restaurant One Page HTML5 Template</title>
+</head>
+
+<body>
+
+    <!--CONTENUTO HEADER-->
+    <header>
+    </header>
+    <div id="nav">
+        <nav>
+
+            <h1>Restaurant's</h1>
+            <label for="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="menu" id="hamburger">
+            <ul>
+                <li><a href="#" title="Home page">Home</a></li>
+                <li><a href="#about" title="About">About us</a></li>
+                <li><a href="#blog" title="Qublog">Blog</a></li>
+                <li><a href="#menu" title="Questo è il menu">Menu</a></li>
+                <li><a href="#subscribe" title="Iscriviti inserendo la mail">News</a></li>
+                <li><a href="#contacts" title="Contattaci">Contacts</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <hr id="separate">
+
+    <main>
+        <!--SLIDESHOW-->
+        <section id="slider">
+            <div class="container">
+                <h3>Featured <span>Works</span></h3>
+                <a class="next" onclick="forward()"> ❯</a>
+            </div>
+
+            <div class="content">
+                <div id="imgslide">
+
+                   <div class="imgcontainer"> <img src="assets/images/slider/slider-img-1.jpg"></div>
+
+                   <div class="imgcontainer"> <img src="assets/images/slider/slider-img-2.jpg"></div>
+
+                    <div class="imgcontainer"><img src="assets/images/slider/slider-img-3.jpg"></div>
+
+                    <div class="imgcontainer"><img src="assets/images/slider/slider-img-4.jpg"></div>
+
+                    <div class="imgcontainer"><img src="assets/images/slider/slider-img-1.jpg"></div>
+
+                    <div class="imgcontainer"><img src="assets/images/slider/slider-img-2.jpg"></div>
+
+                    <div class="imgcontainer"><img src="assets/images/slider/slider-img-3.jpg"></div>
+
+                    <div class="imgcontainer"><img src="assets/images/slider/slider-img-4.jpg"></div>
+                </div>
+            </div>
+
+
+
+            <div class="page">
+                <a class="point active" onclick="page(0)">.</a>
+                <a class="point" onclick="page(1)">.</a>
+                <a class="point" onclick="page(2)">.</a>
+                <a class="point" onclick="page(3)">.</a>
+                <a class="point" onclick="page(4)">.</a>
+                <a class="point" onclick="page(5)">.</a>
+                <a class="point" onclick="page(6)">.</a>
+                <a class="point" onclick="page(7)">.</a>
+            </div>
+        </section>
+        <!--SEZIONE ABOUT US-->
+        <section id="about">
+            <img src="assets/images/cooker-img.png" alt="cook">
+            <h1>Your <span>Restaurant's</span> <br> Website Has To Look <span>Good</span>
+            </h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, distinctio architecto! Aut reiciendis
+                esse molestias provident numquam consequuntur illum incidunt eveniet soluta laboriosam temporibus quod,
+                ipsa excepturi sequi quasi necessitatibus!
+            </p>
+        </section>
+        <!--SEZIONE BLOG-->
+        <section id="blog">
+            <h1>Latest <span>From</span> the <span>Blog</span>
+            </h1>
+            <hr>
+            <div class="blogflex">
+                <div class="blogcontainer">
+                    <div class="blogimg">
+                        <img src="assets/images/blog/blog-img-1.jpg">
+                    </div>
+                    <div class="blogtesto">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <hr>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        <div class="freccia"></div>
+                        
+                    </div>
+                </div>
+                <div class="blogcontainer">
+                    <div class="blogimg">
+                        <img src="assets/images/blog/blog-img-2.jpg">
+                    </div>
+                    <div class="blogtesto">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <hr>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        <div class="freccia"></div>
+                    </div>
+                </div>
+                <div class="blogcontainer">
+                    <div class="blogtesto">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <hr>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        <div class="freccia2"></div>
+                    </div>
+                    <div class="blogimg">
+                        <img src="assets/images/blog/blog-img-3.jpg">
+                    </div>
+                </div>
+                <div class="blogcontainer">
+                    <div class="blogtesto">
+                        <div class="freccia2"></div>
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <hr>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                    </div>
+                    <div class="blogimg">
+                        <img src="assets/images/blog/blog-img-4.jpg">
+                    </div>
+                </div>
+                <div class="blogcontainer">
+                    <div class="blogimg">
+                        <img src="assets/images/blog/blog-img-5.jpg">
+                    </div>
+                    <div class="blogtesto">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <hr>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        <div class="freccia"></div>
+                    </div>
+                </div>
+                <div class="blogcontainer">
+                    <div class="blogimg">
+                        <img src="assets/images/blog/blog-img-6.jpg">
+                    </div>
+                    <div class="blogtesto">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <hr>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        <div class="freccia"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="divinfo">
+                <input class="info" type="button" value="MORE INFO">
+            </div>
+        </section>
+        <!--SEZIONE MENU-->
+        <section id="menu">
+            <div class="containermenu">
+                <div class="containermenu1">
+                    <h1>our <span>menu</span> the <span>price</span></h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+                <div class="containermenu2">
+                    <div class="titlemenu">
+                        <h3>featured <span>on the week</span></h3>
+                    </div>
+                    <ul>
+                        <li class="item">
+
+                            <div class="item-title">
+                                <h2>Pancakes n' Such</h2>
+                                <div class="linea"></div>
+                                <span class="spanmenu">$ 25.00</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+
+                        </li>
+                        <li class="item">
+                            <div class="item-title">
+                                <h2>Homestyle Chicken Pot Pie</h2>
+                                <div class="linea"></div>
+                                <span class="spanmenu">$ 10.00</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                        </li>
+                        <li class="item">
+
+                            <div class="item-title">
+                                <h2>Cereal, Panecillos y Frutas</h2>
+                                <div class="linea"></div>
+                                <span class="spanmenu">$ 5.00</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+
+                        </li>
+                        <li class="item">
+
+                            <div class="item-title">
+                                <h2>Meat of Skewers</h2>
+                                <div class="linea"></div>
+                                <span class="spanmenu">$ 15.00</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+
+                        </li>
+                        <li class="item">
+
+
+                            <div class="item-title">
+                                <h2>Steak with a Garlic and Parsley Risotto</h2>
+                                <div class="linea"></div>
+                                <span class="spanmenu">$ 75.00</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+
+
+                        </li>
+                        <li class="item">
+                            <div class="item-title">
+                                <h2>Caesar Salad</h2>
+                                <div class="linea"></div>
+                                <span class="spanmenu">$ 7.00</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+
+                </div>
+                </li>
+
+                </ul>
+
+                <input type="button" value="MORE INFO" class="bottonemenu">
+
+
+
+            </div>
+            </div>
+
+
+        </section>
+        <!--SEZIONE CONTATTI (FORM NEWSLETTER + FORM CONTACT US)-->
+        <section id="subscribe">
+            <div class="containersub">
+                <h1>SUBSCRIBE <span>to our</span> NEWSLETTER </h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                <form class="formsub">
+                    <div class="divform">
+                        <input type="email" placeholder="Enter your email to subscribe..."><br>
+                        <button class="bottonesub">SUBSCRIBE</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <section id="contacts">
+
+            <h2>our <span>contact us</span></h2>
+            <hr>
+
+
+            <h3>sign up for <span>email alerts</span></h3>
+            <input type="text" name="fullname" id="fullname" placeholder="Write your full name here...">
+            <input type="email" name="email" id="email-area" placeholder="Write your email address here...">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+            <input type="submit" id="send" value="SEND YOUR MESSAGE">
+
+        </section>
+    </main>
+
+    <!--CONTENUTO FOOTER-->
+    <footer>
+        <!--INFO CONTATTI-->
+        <section id="footer">
+            <section>
+                <h3>Contact <span>info</span></h3>
+
+                <div class="div1">
+                    <h4><i class="fa-solid fa-phone"></i><span>Telephone</span></h4>
+                    <p>(000) 123 456 78- (000) 123 4567 89</p>
+                </div>
+                <div class="div1">
+                    <h4><i class="fas fa-map-marker-alt"></i> <span>Address</span></h4>
+                    <p>2046 Blue Spruce Lane Laurel Canada</p>
+                </div>
+                <div class="div1">
+                    <h4><i class="fas fa-envelope"></i> <span>E-mail</span></h4>
+                    <p>rest@gmail.com - rest@mail.ru</p>
+                </div>
+
+            </section>
+
+            <section>
+                <h3>Latest <span>Blog post</span></h3>
+                <div class="div2">
+                    <a href="#"><span>Nov 9-2014</span></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                </div>
+                <div class="div2">
+                    <a href="#"><span>Sep 8-2014</span></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                </div>
+            </section>
+            <section>
+                <h3>Photo <span>Stream</span></h3>
+                <div class="div3">
+                    <img src="assets/images/photo/photo-1.jpg">
+                    <img src="assets/images/photo/photo-2.jpg">
+                    <img src="assets/images/photo/photo-3.jpg">
+                    <img src="assets/images/photo/photo-4.jpg">
+                </div>
+
+
+                <h3>Follow <span>US</span></h3>
+                <div class="div4">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-solid fa-basketball"></i>
+                    <i class="fa-brands fa-behance"></i>
+
+                </div>
+            </section>
+        </section>
+        <!--COPYRIGHT-->
+        <div id="copyright">
+            <p>Copyright &copy; 2014 - All Rights Reserved. Design and Developed by <span>Themefisher</span></p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
