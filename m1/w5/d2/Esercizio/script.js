@@ -5,7 +5,7 @@ const BTN = document.querySelector('#buy');
 
 
 function buy(){
-    document.querySelector('#msg').innerHTML += '<ul>' 
+    document.querySelector('#msg').innerHTML += '<ol>' 
     while (euro >= 0.80){ 
         euro = Math.floor(euro - 0.80)
         document.querySelector('#msg').innerHTML += `<li> Hai comprato un caffè. Ti restano ${euro} euro. </li>`
@@ -16,7 +16,7 @@ function buy(){
             document.querySelector('#msg').innerHTML += `<p>Basta! Troppi caffè</p>`
         }
     } 
-    document.querySelector('#msg').innerHTML += '</ul>'
+    document.querySelector('#msg').innerHTML += '</ol>'
     
 
 }

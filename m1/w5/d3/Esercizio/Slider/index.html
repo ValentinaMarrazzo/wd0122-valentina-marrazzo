@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21b67fa2b7.js" crossorigin="anonymous"></script>
+
+    <title>Slider 3D</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+
+        i{
+            display: inline-block;
+            background-color:white;
+            color: burlywood;
+            padding: 3%;
+            border-radius: 100%;
+            margin: 10% 20%;
+            cursor: pointer;
+        }
+
+        #container{
+            margin: 5%;
+            width: 80vw;
+            height: 60vh;
+            perspective: 100rem;
+        }
+        
+        #cube {
+            margin: 10% auto;
+            width: 30vw;
+            height: 30vh;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        #first, #second, #third, #fourth{
+            width: 30vw;
+            height: 30vh;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+
+        #first{
+            background-image: url('https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk');
+            background-size: cover;
+            background-position: bottom;
+            transform: rotateY(180deg) translateZ(16vh);
+        }
+        #second{
+            background-image: url('https://i.picsum.photos/id/1012/3973/2639.jpg?hmac=s2eybz51lnKy2ZHkE2wsgc6S81fVD1W2NKYOSh8bzDc');
+            background-size: cover;
+            background-position: bottom;
+            transform: rotateY(-90deg) translateZ(16vh);
+        }
+        #third{
+            background-image: url('https://i.picsum.photos/id/1020/4288/2848.jpg?hmac=Jo3ofatg0fee3HGOliAIIkcg4KGXC8UOTO1dm5qIIPc');
+            background-size: cover;
+            background-position: bottom;
+            transform: rotateY(90deg) translateZ(16vh);
+        }
+        #fourth{
+            background-image: url('https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A');
+            background-size: cover;
+            background-position: bottom;
+            transform: rotateY(0deg) translateZ(16vh);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <i class="fa-solid fa-arrow-left" id="left"></i>
+        <i class="fa-solid fa-arrow-right" id="right"></i>
+        
+        <div id="cube">
+
+            <div class="face" id="first"></div>
+            <div class="face" id="second"></div>
+            <div class="face" id="third"></div>
+            <div class="face" id="fourth"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
