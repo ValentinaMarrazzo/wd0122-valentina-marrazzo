@@ -26,7 +26,7 @@
             margin: 5%;
             width: 80vw;
             height: 60vh;
-            perspective: 100rem;
+            perspective: 500rem;
         }
         
         #cube {
@@ -35,15 +35,17 @@
             height: 30vh;
             position: relative;
             transform-style: preserve-3d;
+            transform: translateY(-40%)
         }
 
         #first, #second, #third, #fourth{
-            width: 30vw;
+            width: 15vw;
             height: 30vh;
             position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
+            
             
             
         }
@@ -52,25 +54,25 @@
             background-image: url('https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk');
             background-size: cover;
             background-position: bottom;
-            transform: rotateY(180deg) translateZ(16vh);
+            transform: rotateY(180deg) translateZ(15vh);
         }
         #second{
             background-image: url('https://i.picsum.photos/id/1012/3973/2639.jpg?hmac=s2eybz51lnKy2ZHkE2wsgc6S81fVD1W2NKYOSh8bzDc');
             background-size: cover;
             background-position: bottom;
-            transform: rotateY(-90deg) translateZ(16vh);
+            transform: rotateY(-90deg) translateZ(15vh);
         }
         #third{
             background-image: url('https://i.picsum.photos/id/1020/4288/2848.jpg?hmac=Jo3ofatg0fee3HGOliAIIkcg4KGXC8UOTO1dm5qIIPc');
             background-size: cover;
             background-position: bottom;
-            transform: rotateY(90deg) translateZ(16vh);
+            transform: rotateY(90deg) translateZ(15vh);
         }
         #fourth{
             background-image: url('https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A');
             background-size: cover;
             background-position: bottom;
-            transform: rotateY(0deg) translateZ(16vh);
+            transform: rotateY(0deg) translateZ(15vh);
         }
 
 
