@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un accordion in js</title>
+</head>
+<body>
+    <style>
+        .rowac button {
+            border: none;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .rowac .content {
+            border: 1px solid gray;
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .rowac .content.open {
+            height: auto;
+            padding: 15px;
+        }
+    </style>
+    
+    <div id="primoac" class="accordion">
+        <div class="rowac">
+
+            <button data-target="#primo"> Sono un bottone</button>
+            <div class="content" id="primo">Sono un contenuto div</div>
+        </div>
+        <div class="rowac">
+
+            <button data-target="#secondo">Sono un bottone</button>
+            <div class="content" id="secondo">Sono un contenuto div</div>
+        </div>
+        <div class="rowac">
+
+            <button data-target="#terzo">Sono un bottone</button>
+            <div class="content" id="terzo">Sono un contenuto div</div>
+        </div>
+
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
