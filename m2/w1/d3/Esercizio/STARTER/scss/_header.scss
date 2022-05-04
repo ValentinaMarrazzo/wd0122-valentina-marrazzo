@@ -1,0 +1,73 @@
+@import 'variables';
+header {
+    background-color: #7524E3;
+}
+
+h1, p, a {
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+  }
+
+  .container {
+      padding: $padding;
+  }
+
+  .logo {
+      font-weight: $font;
+      font-size: 2rem;
+  }
+
+  nav ul {
+      display: flex;
+      justify-content: end;
+      transform: translateY(-40px);
+  }
+
+  nav li {
+      list-style-type: none;
+      margin-right: $space;
+      margin-bottom: $space;
+    }
+    
+    nav li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+  }
+
+  .showcase-content {
+      display: flex;
+  }
+
+  .showcase-content div {
+     position: relative;
+  }
+
+  .showcase-content div h1{
+        font-weight: $font;
+        font-size: 3rem;
+  }
+
+  .btn-primary, .btn-secondary {
+      text-decoration: none;
+      color: white;
+      padding: 2% 5%;
+      margin-right: $space;
+      border-radius: $space;
+      position: absolute;
+      &:hover {
+          padding: 3% 6%;
+      }
+    }
+    
+    .btn-primary {
+        background-color: blue;
+        top: 100px;
+
+  }
+
+  .btn-secondary {
+      background-color: orange;
+      top: 100px;
+      left: 200px;
+  }
