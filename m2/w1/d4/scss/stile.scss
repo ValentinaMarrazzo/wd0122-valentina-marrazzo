@@ -1,0 +1,53 @@
+@import 'function';
+
+@mixin testi($size){
+    margin-top: 10px;
+    color: #808080;
+    font-size: #{$size};
+
+}
+
+@mixin colore($modifica, $valore){
+    #{$modifica}color: $valore;
+
+}
+
+h1{
+    @include testi(1.5rem);
+}
+
+p{
+    @include testi(1rem)
+}
+
+#p1{
+    @extend p;
+    @include colore('', red);
+}
+
+#p2{
+    @include colore('background-', red);
+    width: miaFunzione(3);
+    color: setColor(red);
+}
+
+#d1{
+    background-color: green;
+    color: setColor(green);
+}
+
+/*cicli*/
+
+@for $i from 0 to 6 {
+    .border#{$i}{
+        border-top: 3px * $i solid black;
+    }
+}
+
+$misure: 15px 30px, 40px;
+
+@each $misura in $misure{
+    m#{$misura}{
+        margin: $misura;
+    }
+}

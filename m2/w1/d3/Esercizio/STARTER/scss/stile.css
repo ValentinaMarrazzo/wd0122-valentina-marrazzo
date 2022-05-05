@@ -1,0 +1,98 @@
+header {
+  background-color: #7524E3;
+}
+
+h1, p, a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  padding: 5% 20%;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.showcase-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showcase-content div {
+  position: relative;
+}
+
+.showcase-content div h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.btn-primary, .btn-secondary {
+  text-decoration: none;
+  color: white;
+  padding: 2% 5%;
+  margin-right: 5%;
+  border-radius: 5%;
+  position: absolute;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  padding: 3% 6%;
+}
+
+.btn-primary {
+  background-color: blue;
+  top: 100px;
+}
+
+.btn-secondary {
+  background-color: orange;
+  top: 100px;
+  left: 200px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/*# sourceMappingURL=stile.css.map */

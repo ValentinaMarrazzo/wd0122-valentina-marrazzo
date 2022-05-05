@@ -1,0 +1,30 @@
+header {
+    background-color: $bg;
+    padding: 5%;
+        li{
+            @include list;
+            padding: 5%;
+        }
+        a{
+            @include link;
+            @include contrast($bg);
+            font-style: oblique;
+        }
+    
+    @media screen and (min-width:768px) {
+        border-radius: 5%;
+        border: 3px solid white;
+        box-shadow: 0 5px 10px gray;
+            li{
+                margin: 0 2%;
+                display: inline;
+            }
+        
+        
+    }
+}
+
+#footer{
+    background-color: cornflowerblue;
+    padding: 10%;
+}

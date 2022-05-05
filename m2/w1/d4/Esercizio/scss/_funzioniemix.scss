@@ -1,0 +1,15 @@
+@mixin link(){
+    text-decoration: none;
+}
+
+@mixin list(){
+    list-style-type: none;
+}
+
+@mixin contrast($bg) {
+    @if $bg {
+        color: white;
+    }@else{
+        color: black;
+    }
+}

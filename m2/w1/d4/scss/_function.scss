@@ -1,0 +1,12 @@
+@function miaFunzione($n){
+    @return 100 / $n + px;
+}
+
+@function setColor($colore){
+    $luminosity: lightness($colore);
+    @if($luminosity > 50){
+        @return black; 
+    }@else{
+        @return white;
+    }
+}
