@@ -1,0 +1,11 @@
+@function lightDark($sfondo){
+    @if(lightness($sfondo) <= 50){
+        @return whitesmoke;
+    }@else{
+        @return black;
+    }
+};
+
+@function mobileHeight($altezza){
+    @return $altezza / 2;
+}

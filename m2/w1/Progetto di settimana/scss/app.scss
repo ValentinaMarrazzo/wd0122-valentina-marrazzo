@@ -1,0 +1,90 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import 'variables';
+@import 'function';
+
+/*VARIABILI*/
+$sfondo: black;
+$altezza: 50vh;
+
+/*STILE*/
+body{
+    background-color: $sfondo;
+    color: lightDark($sfondo);
+}
+
+main{
+    background-image: url('https://images.unsplash.com/photo-1508777231775-4e31de7591ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+    background-size: cover;
+    background-position: top;
+    @media screen and (max-width:764px){
+           background-image: none;
+        }
+    
+}
+
+.hero{
+    height: $altezza;
+
+    .description {
+        width: 40%;
+        margin-top: 20%;
+        margin-left: 60%;
+    
+    }
+    @media screen and (max-width:764px){
+        background-image: url('https://images.unsplash.com/photo-1508777231775-4e31de7591ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+    background-size: cover;
+    background-position: top;
+        .description{
+            width: 100vw;
+            margin-top: 30%;
+            margin-left: -30%;
+            margin-bottom: 30%;
+        }
+    }
+}
+
+
+.partner {
+    margin-top: 20%;
+    height: $altezza;
+    .banner{
+        margin-top: 5%;
+        hr{
+            width: 20%;
+            border-top: 3px solid #ffc107;
+            margin: 5% auto;
+    }
+    }
+    @media screen and (max-width:764px){
+        margin-top:10%;
+        height: mobileHeight($altezza);
+        hr{
+            margin: 10% auto;
+        }
+        svg{
+            margin: 5% auto;
+            display: block;
+        }
+    }
+}
+
+.testimonials{
+
+    hr{
+        width: 20%;
+        border-top: 3px solid #ffc107;
+        margin: 5% auto;
+    }
+    #carouselExampleSlidesOnly {
+        margin-left: 8%;
+    }
+    @media screen and (max-width:764px){
+        margin-top: 60%;
+        #carouselExampleSlidesOnly {
+        width: 100vw;
+        margin-left: -20%;
+        }
+    }
+}
