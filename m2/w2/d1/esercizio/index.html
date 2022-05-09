@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in js</title>
+    <style>
+        .row{
+            display: flex;
+            flex-direction: row;
+            margin: 10%;
+            border: 2px solid palevioletred;
+            border-radius: 10%;
+        }
+        .col{
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+        }
+        #form{
+            text-align: center;
+            align-items: center;
+        }
+        label, p{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 3%;
+            color: palevioletred;
+        }
+        input {
+            margin-bottom: 10%;
+            font-size: 1.5rem;
+            width: 50%;
+        }
+        button {
+            padding: 5%;
+            font-size: 1rem;
+            font-weight: bold;
+            width: fit-content;
+            background-color: transparent;
+            border: 3px solid palevioletred;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col" id="form"></div>
+            <div class="col" id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
