@@ -1,0 +1,29 @@
+[
+    {
+        "gusto": "margherita",
+        "tipo": "napoletana",
+        "prezzo": 5,
+        "dimensioni" : ["mini",
+        "normale",
+        "mezzo metro"],
+        "disponibile": true
+    },
+    {
+        "gusto": "diavola",
+        "tipo": "napoletana",
+        "prezzo": 7,
+        "dimensioni" : ["mini",
+            "normale",
+            "mezzo metro"],
+        "disponibile": true
+    },
+    {
+        "gusto": "capricciosa",
+        "tipo": "napoletana",
+        "dimensioni" : ["mini",
+            "normale",
+            "mezzo metro"],
+        "prezzo": 7,
+        "disponibile": true
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "nome": "Inuyasha",
+        "fiction": "Inuyasha",
+        "ruolo": "personaggio principale"
+
+    },
+    {
+        "nome": "Kagome Higurashi",
+        "fiction": "Inuyasha",
+        "ruolo": "Protagonista"
+
+    },
+    {
+        "nome": "Kikyo",
+        "fiction": "Inuyasha",
+        "ruolo": "Antagonista/Aiutante"
+
+    },
+    {
+        "nome": "Miroku",
+        "fiction": "Inuyasha",
+        "ruolo": "Aiutante"
+
+    },
+    {
+        "nome": "Sango",
+        "fiction": "Inuyasha",
+        "ruolo": "Aiutante"
+
+    }
+]
