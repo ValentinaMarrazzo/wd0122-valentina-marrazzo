@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea nuovo utente</title>
+</head>
+<body>
+    <h1>Crea nuovo utente</h1>
+    <form id="newUser">
+        <input type="text" name="name" id="name" placeholder="Nome">
+        <input type="text" name="lastname" id="lastname" placeholder="Cognome">
+        <input type="email" name="lemail" id="email" placeholder="Email">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <select name="role" id="role_id">
+            <option value="">Seleziona</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            </select>
+            <button>Invia</button>
+    </form>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const APPURL = 'https://sofin.wp-admin.it/public/api/v1/user'
+
+        let bottone = document.querySelector('#newUser button')
+
+        bottone.addEventListener('click', function(e){
+            e.preventDefault()//preventDefault impedisce che un'azione di default venga eseguita
+
+            let name = document.querySelector('#name')
+            let lastname = document.querySelector('#lastname')
+            let email = document.querySelector('#email')
+            let password = document.querySelector('#password')
+            let role_id = document.querySelector('#role_id')
+
+            let user = {
+                name: name.value,
+                lastname: lastname.value,
+                email: email.value,
+                password: password.value,
+                role_id: role_id.value
+            }
+
+            fetch(APPURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type':'application/json'//da specificare di modo che il browser faccia la codifica di quanto mandato, altrimenti lo legge come solo html 
+                },
+                body: JSON.stringify(user)//oggetto in stringify con l'utente inviato
+            }).then(res => res.json())
+            .then(res => {
+                Swal.fire({
+                    icon: 'Success',
+                    title: 'Utente creato',
+                    html: `è stato creato un nuovo utente ${res.name} ${res.lastname} con id ${res.role_id}`
+
+                })
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio node e fetch</title>
+    <style>
+        div {
+            margin: 10%;
+        }
+
+        table{
+            margin: 0 auto;
+            border: 2px solid gray;
+            width: 30rem;
+        }
+        td, th{
+            text-align: center;
+            padding: 4%;
+            border-bottom: 2px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/users')
+  .then((response) => response.json())
+  .then((response) => {
+      let tbody = document.querySelector('tbody');
+      for(utente of response){
+          let tr = document.createElement('tr')
+
+          let tId = document.createElement('td')
+          tId.innerHTML = utente.id
+          let tName = document.createElement('td')
+          tName.innerHTML = utente.name
+          let tEmail = document.createElement('td')
+          tEmail.innerHTML = utente.email
+
+          tr.append(tId, tName, tEmail)
+          tbody.append(tr)
+          
+      }
+  });
+    </script>
+</body>
+</html>
