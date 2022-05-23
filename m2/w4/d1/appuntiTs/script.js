@@ -2,3 +2,40 @@
 var nome = 'Mario'; //se non si specifica il tipo di dato, ts assumerà automaticamente che il dato sarà di tipo any. Le variabili in any si possono riassegnare con altri tipi di dato, invece specificando il tipo di dato non si può riassegnare con altri tipi di dato. Non è consigliabile abusare di any.
 //nome = 5; darà errore perché 5 non è un dato di tipo stringa
 var ID = 125;
+//tipi di dato:
+var str = 'testo';
+var num = 3;
+var bool = true;
+var obj = {};
+var arr = [];
+var strArr = ['mario', 'luigi', 'peach'];
+var numArr = [0, 1, 2];
+var objArr = [{}, {}, {}];
+var anyArr = ['Rosalinda', 2, {}];
+var unk = 12; //dato sconosciuto: a differenza di un dato any, non lascia leggere le proprietà in esso contenute (nel caso il tipo di dato fosse un oggetto).
+var union = 'test'; //può contenere o una stringa o un oggetto. E' più preciso di any
+//funzioni
+function vuoto(testo) {
+    console.log(testo);
+} //una funzione vuota non è richiesto che restituisca qualcosa con return 
+function ottieniSaluto(testo) {
+    return testo;
+} //Per com'è stata definita, questa funzione può restituire solo una stringa
+function saluto(testo, tag) {
+    var t = document.createElement(tag);
+    t.innerHTML = testo;
+    return t;
+}
+saluto('Hey', 'p');
+//classi
+var User = /** @class */ (function () {
+    function User() {
+    }
+    return User;
+}());
+var user = new User(); /*oppure: {
+    name: 'Mario',
+    lastname: 'bros',
+    age: 40
+}*/
+var users = [user];
