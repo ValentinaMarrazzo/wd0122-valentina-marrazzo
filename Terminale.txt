@@ -1,0 +1,27 @@
+*****GIT********
+ls = visualizzare cartelle
+git init = inizio condivisione cartelle. Non farlo nelle cartelle di livello inferiore a quella dove c'è la cartella fantasma di git
+cd + nome cartella = va nella cartella nominata
+cd + ../ = ritorna indietro di un livello
+git add . = aggiunge tutti i file al git
+git add <file> = aggiungere un determinato file
+git commit -m "commento del commit" = aggiunge un commit per ogni modifica
+git config --global user.email "email" = configura l'email 
+git push origin master = invio richiesta di creazione branch
+git status = visualizza quali modifiche sono state rilevate
+git clone + http = copia il contenuto di un repository
+touch .gitignore = crea un file .gitignore all'interno del quale può essere scritto cosa git debba ignorare
+
+*********NPM******************
+(entrare nella cartella in cui si sta lavorando, cioè la root del progetto)
+- npm init
+- andare nel package.json e mettere la seguente stringa su script e salvare:
+"compile:sass": "node-sass scss/style.scss css/style.css -w"
+oppure (dipende da dove si trovano le cartelle scss e css rispetto alla root)
+    "compile:sass": "node-sass assets/scss/style.scss assets/css/style.css -w"
+
+**********TYPESCRIPT**************
+- entrare nella cartella dove si trova il file ts da terminale
+- lanciare tsc + nome del file
+- lanciare tsc + nome del file + -w
+- lanciare tsc --init

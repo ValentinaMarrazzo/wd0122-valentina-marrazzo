@@ -62,6 +62,14 @@
                 })
             })
         })
+
+        //PUT
+        fetch(APPURL,{
+            method: 'PUT',
+            headers: {'content-type':'application/json'},
+            body: JSON.stringify(user)
+        })//l'url deve avere già l'id dell'utente da modificare
+        
     </script>
 </body>
 </html>

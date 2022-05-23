@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione su api</title>
+</head>
+<body>
+    
+    <!--Ogni risorsa che si inserisce in backend ha un riferimento univoco attraverso un uri. -->
+
+    <!--Usare i metodi http permette di manipolare le risorse. CRUD => Create, Read, Update, Delete. 
+    - Post = create
+    - Get = read
+    - put = update
+    - delete = delete
+    Le comunicazioni http sono stateless, cioè non ritengono informazioni da una sessione all'altra-->
+    <script>
+        //GET
+        const APPURL = 'https://jsonplaceholder.typicode.com/users'
+        fetch(APPURL)
+        .then(res => res.json())//trasforma la pagina in risposta in un file json
+        .then(res => {
+            console.log(res);
+        })
+
+        //DELETE
+        fetch(APPURL+'/'+utente.id, {
+            method: 'DELETE'
+        })
+    </script>
+</body>
+</html>
