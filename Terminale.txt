@@ -25,3 +25,5 @@ oppure (dipende da dove si trovano le cartelle scss e css rispetto alla root)
 - lanciare tsc + nome del file
 - lanciare tsc + nome del file + -w
 - lanciare tsc --init
+- tsc + nome file + -sourcemap -w permette di mappare il contenuto del file ts, così che sia possibile individuare a quale riga si riferisca il codice 
+- tsc + nome file.estensione + -sourcemap -outfile app.js -w comprime il contenuto di più file in un unico file js
