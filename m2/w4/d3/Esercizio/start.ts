@@ -45,12 +45,12 @@ class Artigiano extends Lavoratore implements tasse {
     }
 
     getTasseInps(){
-        return this.redditoAnnuo + ((this.redditoAnnuo * this.tasseInps)/100) 
+        return this.redditoAnnuo  * (this.tasseInps/100) 
     
     }
 
     getTasseIrpef(){
-        return this.redditoAnnuo + ((this.redditoAnnuo * this.tasseIrpef)/100) 
+        return this.redditoAnnuo * (this.tasseIrpef/100) 
     
     }
 }
