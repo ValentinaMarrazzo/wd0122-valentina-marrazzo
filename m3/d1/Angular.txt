@@ -1,0 +1,18 @@
+Angular è una piattaforma per la creazione di applicazioni web, mobile e desktop. La versione del 2020 è basata su typescript.
+Creando un'applicazione in Angular, ci si appoggia ad un sistema di routing per creare spa (single page app): non esiste più una pagina per ogni url ma in base all'url viene generato del contenuto all'interno della pagina già attiva. Mentre una spa è in esecuzione solo i dati vengono inviati in rete, il che richiede molto meno tempo e larghezza di banda rispetto all'invio costante di html.
+
+E' potenzialmente svantaggioso per la SEO, perché il contenuto, essendo generato in browser, non esiste durante la lettura da parte del bot dei motori di ricerca. Questo limite può essere raggirato con Angular Universal perché permette di inviare l'html al browser insieme ad Angular. Angular Universal è un framework che fa reinderizzazione lato server. 
+
+Angular usa () e [] per il two way binding tra view e model. Significa che in base a ciò che si scrive vengono aggiornati i dati senza attivare un evento. 
+
+Usa molto i decoratori per allegare dati extra alle classi normali. Dietro le quinte si occupa di manipolare e connettere il vero DOM. Quindi non è lo sviluppatore a dover scrivere codice che crei o rimuova elementi da/verso il DOM.
+
+Con Angular si può offrire all'utente un'esperienza migliore: l'applicazione risulterà più veloce perché verrà utlizzata meno larghezza di banda e non si verificheranno aggiornamenti della pagina intera. L'applicazione sarà molto più semplice da distribuire in produzione da parte client. La parte di frontend è molto semplice.
+
+Command Line Interface (CLI) è una serie di comandi specifici per una certa tecnologia da poter lanciare per eseguire compiti ripetitivi. Angular cli è un'interfaccia a riga di comando per sviluppare, analizzare e mantenere le applicazioni angular. Per installare da terminale: npm install -g @angular/cli
+
+ng new nome_cartella crea una cartella per progetto angular.
+
+ng serve --open avvia il server e apre la finestra dove vedere il sito
+
+ng g c + nome component crea un componente della pagina in angular

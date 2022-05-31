@@ -1,0 +1,4 @@
+React è una libreria creata da Facebook per il rendering del contenuto nel DOM in modo efficiente. Si basa sui componenti e costruire user interface dai componenti. Offre tutti gli strumenti di cui si ha bisogno per definire cosa dovrebbe essere renderizzato, in che modo e in quali circostanze.
+Ha qualcosa per lo state management ma richiede molto più lavoro. 
+Non prevede sistemi già fatti per routing, gestione form e http client. 
+I progetti react sono impostati in modo tale che la sintassi "html in javascript" sia supportata durante lo sviluppo.

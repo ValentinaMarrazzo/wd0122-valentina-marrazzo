@@ -1,0 +1,2 @@
+View è un framework che si trova tra React e Angular. Include più funzionalità di React ma non è comparabile ad Angular. Offre una gestione dello stato integrata e routing. Non include la convalida dei moduli o le funzionalità del client http. 
+usa Javascript normale e in genere utilizza componenti a file singolo. Divide il template (html) e la logica Javascript.
