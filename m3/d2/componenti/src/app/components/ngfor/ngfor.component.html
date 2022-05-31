@@ -1,0 +1,11 @@
+<!--ngFor è il ciclo for applicato agli elementi html-->
+
+<p>Numbers:</p>
+<ul>
+  <li *ngFor="let numero of numbers">{{numero}}</li>
+</ul>
+
+<p>Users:</p>
+<ul>
+  <li *ngFor="let user of users; let i = index"> {{i+1}} {{user.name}} </li> <!--Per poter usare le proprietà di un oggetto va creata una classe o un'interfaccia dove si rendano disponibili le suddette proprietà. Vedere il file ts. In Angular non è accettata la sintassi ++-->
+</ul>

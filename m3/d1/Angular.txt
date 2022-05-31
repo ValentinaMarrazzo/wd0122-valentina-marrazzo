@@ -9,7 +9,7 @@ Usa molto i decoratori per allegare dati extra alle classi normali. Dietro le qu
 
 Con Angular si può offrire all'utente un'esperienza migliore: l'applicazione risulterà più veloce perché verrà utlizzata meno larghezza di banda e non si verificheranno aggiornamenti della pagina intera. L'applicazione sarà molto più semplice da distribuire in produzione da parte client. La parte di frontend è molto semplice.
 
-Command Line Interface (CLI) è una serie di comandi specifici per una certa tecnologia da poter lanciare per eseguire compiti ripetitivi. Angular cli è un'interfaccia a riga di comando per sviluppare, analizzare e mantenere le applicazioni angular. Per installare da terminale: npm install -g @angular/cli
+Command Line Interface (CLI) è una serie di comandi specifici da poter lanciare per eseguire compiti ripetitivi, per lanciare il server, per installare angular. Per installare da terminale: npm install -g @angular/cli
 
 ng new nome_cartella crea una cartella per progetto angular.
 

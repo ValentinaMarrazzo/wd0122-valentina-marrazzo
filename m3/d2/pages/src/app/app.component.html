@@ -1,0 +1,10 @@
+<ul>
+  <li>
+    <a routerLinkActive routerLink="/">Home</a><!--Per la navigazione interna non va usato href, ma routerLink. routerLinkActive -->
+  </li>
+  <li>
+    <a routerLink="/users">Users</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet><!--Questo tag rappresenterà il contenuto singolo di ogni pagina. Le rotte vanno definite in app-routing.module-->

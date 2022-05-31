@@ -1,0 +1,13 @@
+<select (change)="cambiaFrutto($event)"> <!--bisogna passare $event perché il metodo dovrà leggere il valore di select-->
+  <option value="">--Seleziona un frutto--</option>
+  <option value="pere">Pere</option>
+  <option value="mele">Mele</option>
+  <option value="banane">Banane</option>
+</select>
+
+<div [ngSwitch]="fruttoScelto">
+  <div *ngSwitchCase="'pere'">0.50</div>
+  <div *ngSwitchCase="'mele'">0.44</div>
+  <div *ngSwitchCase="'banane'">0.99</div>
+  <div *ngSwitchDefault>Prezzo frutto</div>
+</div>

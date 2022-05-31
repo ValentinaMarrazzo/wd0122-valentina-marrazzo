@@ -1,0 +1,5 @@
+La doppia graffa {{nomeProprietà}} richiama la proprietà della classe Component nel file typescript collegato all'html da cui si scrive.
+
+ng generate component nomeComponente genera una cartella con i file necessari per ogni componente.
+
+Per aggiungere bootstrap o altri pacchetti di stile basta aggiungere il percorso file all'interno di style e script in build nel file angular.json

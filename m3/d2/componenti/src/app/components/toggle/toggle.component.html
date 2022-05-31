@@ -1,0 +1,6 @@
+<p *ngIf="active; else activeText">Hi there!</p> <!--ngif si occupa di mostrare il singolo elemento se l'if non è positivo anche quando la pagina è attiva-->
+<p *ngIf="a > 0">Hello there</p>
+
+<button (click)="active = !active">Mostra/nascondi</button>
+
+<ng-template #activeText>Ciao</ng-template> <!--ng-template è un tag generico in cui fare operazioni-->
