@@ -1,0 +1,10 @@
+<ol>
+  <ng-container *ngFor="let t of tasks">
+  <li *ngIf="t.completed">
+    <p (click)="reDoThis()">
+      {{t.title}}
+    </p>
+  </li>
+  </ng-container>
+
+</ol>

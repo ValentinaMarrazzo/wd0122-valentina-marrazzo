@@ -1,0 +1,6 @@
+<div>
+
+  <h2 *ngIf="title === ''">Inserisci nuove Task</h2>
+  <input type="text" name="newtask" [(ngModel)]="title" placeholder="Cosa c'è di nuovo da fare?">
+  <button (click)="addThis()">+</button>
+</div>

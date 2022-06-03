@@ -1,0 +1,8 @@
+li{
+  font-size: 1.5rem;
+
+}
+p{
+  cursor: pointer;
+  text-decoration: line-through;
+}

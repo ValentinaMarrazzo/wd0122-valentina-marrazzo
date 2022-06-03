@@ -1,0 +1,15 @@
+<ol>
+  <ng-container *ngFor="let t of tasks">
+  <li *ngIf="!t.completed">
+    <p (click)="doneThis(t.id)">
+      {{t.title}}
+    </p>
+    <button id="del" (click)="removeThis(t.id)">Elimina</button>
+    <button (click)="changeThis(t.id, ct)"> Modifica</button>
+  </li>
+</ng-container>
+
+</ol>
+
+<label for="change">Scrivi il testo che vuoi sostituire</label>
+<input type="text" name="change" [(ngModel)]="ct" id="change">
