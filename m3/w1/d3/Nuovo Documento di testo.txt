@@ -1,0 +1,3 @@
+ng g inteface +cartella/nome-file è il comando per creare un'interfaccia da terminale
+ng g class +cartella/nome-file è il comando per creare una classe da terminale
+

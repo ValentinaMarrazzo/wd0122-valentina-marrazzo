@@ -1,0 +1,10 @@
+<div class="container">
+  <form>
+
+    <input type="text" name="name" class="form-control" [(ngModel)]="name" placeholder="nome">
+    <input type="text" name="lastname" class="form-control" [(ngModel)]="lastname" placeholder="cognome">
+    <input type="text" name="gender" class="form-control" [(ngModel)]="gender" placeholder="genere">
+    <button (click)="save()" class="btn btn-success">Aggiungi utente</button>
+
+  </form>
+</div>

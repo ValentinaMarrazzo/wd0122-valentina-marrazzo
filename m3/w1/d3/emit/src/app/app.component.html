@@ -1,0 +1,24 @@
+<button
+(click)="visibile = !visibile"
+class="btn btn-primary">Aggiungi Utente</button>
+<app-new-user
+*ngIf="visibile"
+(onManCreated)="aggiungiUomo($event)"
+(onWomanCreated)="aggiungiDonna($event)"
+></app-new-user><!--$event funge da placeholder per user: è il dato inviato dal metodo emit() dell'EventEmitter all'interno del componente app-new-user-->
+
+{{name}}
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Lastname</th>
+    <th>Gender</th>
+  </tr>
+  <tr class="app-user" [user]="user" *ngFor="let user of users">
+  </tr>
+</table>
+
+
+<router-outlet></router-outlet>

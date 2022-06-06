@@ -1,0 +1,6 @@
+Un observable è uno stream che contiene dati sincroni e asincroni: si può sottoscrivere questo sream e ricevere dati non appena sono emessi. Non è di norma ciò che gestisce il dato: riceve e pulisce il dato e lo trasmette.
+
+Un observer è un consumer che riceve valori emessi da un observable. E' composto da tre callback che ricevono notifiche dall'observable: next, error, complete.
+
+Una subscription è un riferimento all'esecuzione di un observable. 
+
