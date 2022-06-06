@@ -1,0 +1,16 @@
+<h3>Totale foto favorite = {{like}}</h3>
+
+<div class="container">
+<div class="row">
+  <div *ngFor="let p of photos" class="col-3">
+
+    <div class="card" style="width: 18rem;">
+      <img src="{{p.url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{p.title}}</h5>
+        <a (click)="likes()" [classList]="!active ? 'btn-close' : 'btn btn-danger' ">Mi piace</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
