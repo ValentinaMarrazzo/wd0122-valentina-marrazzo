@@ -1,0 +1,23 @@
+<div class="container">
+  <form (ngSubmit)="submit()" #f="ngForm"> <!--Questa dicitura crea un oggetto. All'interno delle virgolette si può specificare di che tipo di oggetto si tratta-->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" required name="email" id="email" class="form-control" ngModel #email="ngModel"><!--Questa sintassi fa sì che sia angular a gestire la comunicazione tra i documenti. Ngmodel gestisce la modifica del dato dall'input alla variabile nel typescript e serve ad attivare il ngform sul singolo campo-->
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" required name="password" id="password" class="form-control" ngModel #psw="ngModel">
+    </div>
+    <div class="form-group">
+      <label for="city">Città</label>
+      <select name="city" id="city" ngModel>
+        <option value="">Seleziona</option>
+        <option value="Roma">Roma</option>
+        <option value="Milano">Milano</option>
+        <option value="Reggio Emilia">Reggio Emilia</option>
+      </select>
+    </div>
+    <button [disabled]="!f.valid" class="btn btn-primary">Invia</button>
+    <p *ngIf="f.invalid || email.touched || psw.touched" [style.color]="'red'">Compila tutti i campi per inviare il form</p>
+  </form>
+</div>

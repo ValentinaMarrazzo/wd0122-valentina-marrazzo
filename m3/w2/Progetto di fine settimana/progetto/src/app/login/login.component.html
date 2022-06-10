@@ -1,0 +1,18 @@
+<section>
+
+  <div id="form">
+    <form>
+      <label for="email">Email</label>
+      <input type="email"  name="email" [(ngModel)]="authData.email">
+      <label for="pass">Password</label>
+      <input type="password" name="pass" [(ngModel)]="authData.password">
+    </form>
+    <button (click)="login()" mat-stroked-button color="basic">Accedi</button>
+  </div>
+
+  <hr>
+  <h2>Oppure</h2>
+  <button [routerLink]="['/register']" mat-stroked-button color="basic">
+    Registrati
+  </button>
+</section>

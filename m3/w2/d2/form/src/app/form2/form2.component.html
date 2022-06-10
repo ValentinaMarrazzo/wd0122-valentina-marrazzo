@@ -1,0 +1,31 @@
+<div class="container">
+  <form (ngSubmit)="submit()" #f="ngForm">
+    <div ngModelGroup="autData" #autGroup="ngModelGroup">
+      <!--Questa dicitura consente di raggruppare degli elementi in uno stesso elemento/oggetto. I dati corrispondenti verranno assegnati ad esso-->
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" required name="email" id="email" class="form-control" ngModel #email="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" required name="password" id="password" class="form-control" ngModel #psw="ngModel">
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label for="city">Città</label>
+      <select name="city" id="city" ngModel>
+        <option value="">Seleziona</option>
+        <option value="Roma">Roma</option>
+        <option value="Milano">Milano</option>
+        <option value="Reggio Emilia">Reggio Emilia</option>
+      </select>
+    </div>
+    <button [disabled]="!f.valid" class="btn btn-primary">Invia</button>
+    <p *ngIf="f.invalid || email.touched || psw.touched" [style.color]="'red'">Compila tutti i campi per inviare il form</p>
+  </form>
+</div>
+
+<button (click)="setDati()" class="btn btn-warning">Riempi il form</button>
+<button (click)="updateCity()" class="mx-5 btn btn-warning"></button>

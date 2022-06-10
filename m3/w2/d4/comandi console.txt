@@ -1,0 +1,19 @@
+Per installare ngbootstrap: ng add @ng-bootstrap/ng-bootstrap
+Per installare ngzorro: ng add ng-zorro-antd
+Per creare un modulo: ng generate module customers --route customers --module app.module
+Per installare cdk: npm i @angular/cdk --legacy-peer-deps
+Per installare material: ng add @angular/material
+Per l'autenticazione:
+ng g guard auth
+ng g interceptor auth
+ng g service auth
+ng g service user
+"backend": "json-server-auth --watch db.json --routes routes.json --port 4201 --delay 1000"
+
+DA RIPASSARE:
+componenti
+modulo http
+routing
+interceptor
+guard
+serve

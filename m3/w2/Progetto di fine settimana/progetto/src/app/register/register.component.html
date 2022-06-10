@@ -1,0 +1,13 @@
+<section>
+  <div id="form">
+    <form>
+      <label for="username">Username</label>
+      <input type="username" name="username" [(ngModel)]="authData.username">
+      <label for="email">Email</label>
+      <input type="email" name="email" [(ngModel)]="authData.email">
+      <label for="pass">Password</label>
+      <input type="password" name="pass" [(ngModel)]="authData.password">
+    </form>
+    <button (click)="signup()" mat-stroked-button color="basic">Registrati</button>
+  </div>
+</section>
