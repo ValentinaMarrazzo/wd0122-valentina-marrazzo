@@ -1,0 +1,53 @@
+***********AUTENTICAZIONE**********
+- crea componente con modulo di login/register
+- specifica l'url collegato al backend con relativo path per gli array
+- creare due interfacce: una con i dati completi, l'altra con i dati parziale
+//In service//
+- registrazione:
+	signup(user:ISignup){
+	return this.http.post<User>(url, user)
+	}
+- login:
+	login(data:ILogin){
+	return this.http.post(url, data )
+	}
+
+//In component.ts//
+- creare proprietà che sia un nuovo oggetto di User
+
+saveNewUser(){
+	this.auth.signup(this.proprietà).subscribe( (res) => {this.saveJWT(res.accessToken) this.auth.saveLoggedUser(res.user)})
+}
+
+logIn(){
+	this.auth.signup(this.proprietà).subscribe( res => {console.log(res)})
+}
+
+//In service//
+saveJWT(token:string){
+localStorage.setItem('jwt' ,token)
+
+saveloggeduser(user:user){
+localStorage.setItem('loggedUser', JSON.stringify(user))
+
+getloggeduser(){
+	return json.parse(localstorage.getitem('loggeduser') || '{}')
+}
+
+isuserloggedin(){
+	return localstorage.getitem('jwt')
+}
+
+//In guard//
+*si possono creare più guard dove specificare le condizioni da rispettare per accedere ad una pagina
+
+-implementare il router nel constructor
+-implementare il file service
+-in canactivate: 
+	return this.auth.isUserLoggedIn()
+
+//PROTEGGERE ROUTES //
+//in routes//
+"risorsa": "660"
+
+//in interceptor//

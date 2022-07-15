@@ -27,3 +27,15 @@ oppure (dipende da dove si trovano le cartelle scss e css rispetto alla root)
 - lanciare tsc --init
 - tsc + nome file + -sourcemap -w permette di mappare il contenuto del file ts, così che sia possibile individuare a quale riga si riferisca il codice 
 - tsc + nome file.estensione + -sourcemap -outfile app.js -w comprime il contenuto di più file in un unico file js
+
+*****ANGULAR*******
+- nuovo progetto: ng new nomeprogetto
+- creare componente con moduli: ng generate module customers --route customers --module app.module
+*******AUTENTICAZIONE ANGULAR********
+- npm install -D json-server json-server-auth
+creare il file db.json contenente solo{}
+creare routes.json contenente solo{}
+incollare la stringa "backend": "json-server-auth --watch db.json --routes routes.json --port 4201 --delay 1000" in package.json
+lanciare il comando npm run backend
+- ng g guard auth 
+-> CanActivate

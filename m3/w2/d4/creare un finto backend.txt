@@ -1,0 +1,5 @@
+npm install -D json-server json-server-auth
+creare il file db.json contenente solo{}
+creare routes.json contenente solo{}
+incollare la stringa "backend": "json-server-auth --watch db.json --routes routes.json --port 4201 --delay 1000" inpackage.json
+lanciare il comando npm run backend
